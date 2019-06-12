@@ -9,7 +9,6 @@ import Carousel from './components/Carousel';
 
 function wasClicked() {
   console.log(this);
-  return 'active';
 }
 
 const routing = (
@@ -21,7 +20,11 @@ const routing = (
             <Link to='/' onClick={wasClicked} className='active item'>
               Home
             </Link>
-            <Link to='/projects' onClick={wasClicked} activeClassName='current'>
+            <Link
+              to='/projects'
+              onClick={wasClicked}
+              className={`${wasClicked} item`}
+            >
               Projects
             </Link>
             <Link
