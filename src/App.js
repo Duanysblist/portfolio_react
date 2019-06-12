@@ -40,3 +40,16 @@ class App extends React.Component {
 }
 
 export default App;
+
+// Set up Home page with maybe a cool design or animation
+// Set up About page with photo, one or two short paragraphs
+// Set up Projects page
+// Import photos
+// Links to heroku applications
+// In depth explanations of applications with difficulties along the way
+//Set up part of the page for projects that are soon to come
+// Set up Contact page
+// Try to make twitter feed
+// Create a form to send me an email as well as post my email address
+// LinkedIn and Github pages
+// Resume download link
