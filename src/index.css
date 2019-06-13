@@ -41,14 +41,39 @@ ul.header li a {
   background-color: #0099ff;
 }
 img {
-  width: 540px;
-  height: auto;
-  float: left;
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
-.flex-container {
-  display: flex;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    minmax(200px, 1fr)
+  ); /* Resized it to three because those are the proportions 
+  I gave to each individual item*/
+  grid-gap: 1rem;
 }
-.flex-container .box {
-  margin: 10px;
-  font-size: 2vw;
+
+.grid > div {
+  background: #ede7f6;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.about-portrait {
+  grid-column: 1;
+  grid-row: 2 / 5;
+  flex: 33%;
+  max-width: 100%;
+  padding: 0 4px;
+}
+
+.about-text-1 {
+  grid-column: 2;
+  grid-row: 2 / 5;
+}
+.about-text-2 {
+  grid-column: 3;
+  grid-row: 2 / 5;
 }

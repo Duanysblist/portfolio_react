@@ -6,11 +6,11 @@ class About extends React.Component {
     return (
       <div>
         <h1>About</h1>
-        <div className='flex-container'>
-          <div className='box'>
+        <div className='grid'>
+          <div className='about-portrait'>
             <img src={portrait} alt='Portrait' />
           </div>
-          <div className='box'>
+          <div className='about-text-1'>
             <p>
               Hey there! I'm Dan, aspiring software developer and ex-cook. I
               spend most of my days trying to absorb as much information as I
@@ -22,7 +22,8 @@ class About extends React.Component {
               Google CUNY Hackathon in an attempt to make a voice controlled
               device to help students with diasbilities in the classroom.{' '}
             </p>
-            <br />
+          </div>
+          <div className='about-text-2'>
             <p>
               I'm really looking for a forward-thinking company to work for that
               I can pour myself into. I've played around with Android
