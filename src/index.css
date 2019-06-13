@@ -40,3 +40,15 @@ ul.header li a {
 .active {
   background-color: #0099ff;
 }
+img {
+  width: 540px;
+  height: auto;
+  float: left;
+}
+.flex-container {
+  display: flex;
+}
+.flex-container .box {
+  margin: 10px;
+  font-size: 2vw;
+}
